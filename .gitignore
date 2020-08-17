@@ -41,35 +41,3 @@ yarn-debug.log*
  .yarn-integrity
 /config/database.yml
 /test
-
-
-
-/public/packs
-/public/packs-test
-/node_modules
-/yarn-error.log
-yarn-debug.log*
- .yarn-integrity
-/config/database.yml
-/test
-
-/public/packs
-/public/packs-test
-/node_modules
-/yarn-error.log
-yarn-debug.log*
- .yarn-integrity
-/config/database.yml
-/test
-
-
-
-/public/packs
-/public/packs-test
-/node_modules
-/yarn-error.log
-yarn-debug.log*
- .yarn-integrity
-/config/database.yml
-
-/test
