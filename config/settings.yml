@@ -9,3 +9,12 @@ links:
     screencast_series: https://screencasts.railstutorial.org/
     news: https://news.railstutorial.org/ 
     michael_hartl: https://www.michaelhartl.com/
+
+validations:
+  name: 
+    max_length: 50
+  email:
+    max_length: 255
+    regex: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
+  password:
+    min_length: 6  
