@@ -42,4 +42,11 @@ yarn-debug.log*
 /config/database.yml
 test
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+/test
+>>>>>>> Init Project
+>>>>>>> Init Project
 
