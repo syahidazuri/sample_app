@@ -23,3 +23,19 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password: syahida
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  <<: *default
+  database: sample_development
+
+test:
+  <<: *default
+  database: sample_test
+  
