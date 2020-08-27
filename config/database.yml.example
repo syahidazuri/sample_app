@@ -23,8 +23,6 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
-<<<<<<< HEAD
-=======
 default: &default
   adapter: mysql2
   encoding: utf8
@@ -41,4 +39,3 @@ test:
   <<: *default
   database: sample_test
   
->>>>>>> Init Project
