@@ -40,13 +40,6 @@
 yarn-debug.log*
  .yarn-integrity
 /config/database.yml
-test
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 /test
->>>>>>> Init Project
->>>>>>> Init Project
+
 
