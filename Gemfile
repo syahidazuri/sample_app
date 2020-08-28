@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "2.6.5"
 
+gem "rails-i18n"
 gem "config"
 gem "rails", "~> 6.0.3", ">= 6.0.3.2"
 gem "mysql2"
@@ -33,6 +34,8 @@ group :development do
  gem "web-console", ">= 3.3.0"
  gem "listen", "~> 3.2"
  
+  gem "web-console", ">= 3.3.0"
+  gem "listen", "~> 3.2"
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
 end
@@ -62,3 +65,4 @@ group :development, :test do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
