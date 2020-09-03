@@ -23,7 +23,7 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
-default: &default
+  default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
@@ -38,4 +38,3 @@ development:
 test:
   <<: *default
   database: sample_test
-  
