@@ -12,7 +12,8 @@ class User < ApplicationRecord
     length: { minimum: Settings.validations.password.min_length }
   
   has_secure_password 
-  
+    length: { minimum: Settings.validations.password.min_length }, allow_nil: true
+
   before_save :downcase_email
   
   class << User
