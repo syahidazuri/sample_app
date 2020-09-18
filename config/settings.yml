@@ -21,3 +21,4 @@ validations:
     min_length: 6  
 
 remember_me: 1
+password_expired_time: 2
