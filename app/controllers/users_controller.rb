@@ -8,12 +8,16 @@ class UsersController < ApplicationController
     @users = User.sort_by_name.page params[:page]
   end
 
+  def show
+    @user = User.find_by params[:id]
+  end
+
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = "Welcome to the Sample App!"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = "Please check your email to activate your account."
+      redirect_to root_url
     else
       
       flash.now[:danger] = "Error, please try again."
@@ -34,8 +38,11 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @user.destroy
-    flash[:success] = "User deleted"
+    if @user.destroy
+      flash[:success] = "User deleted"
+    else
+      flash[:danger] = "User is not deleted"
+    end
     redirect_to users_url
   end
 
