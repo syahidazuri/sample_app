@@ -24,3 +24,4 @@ validations:
 
 remember_me: 1
 password_expired_time: 2
+per_page: 5
